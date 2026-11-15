@@ -1,0 +1,16 @@
+# Compiled executables and object files
+*.exe
+*.o
+*.obj
+*.out
+
+# Shared libraries (DLLs)
+*.dll
+
+# Doxygen generated docs
+html/
+latex/
+
+# OS files
+.DS_Store
+Thumbs.db

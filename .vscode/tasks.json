@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build SFML Engine",
+            "command": "C:/TDM-GCC-64/bin/g++.exe",
+            "args": [
+                "-std=c++17",
+                "-g",
+                "main.cpp",
+                "Point2D.cpp",
+                "LineSegment.cpp",
+                "PrimitiveRenderer.cpp",
+                "BitmapHandler.cpp",
+                "Player.cpp",
+                "-o",
+                "app.exe",
+                "-I",
+                "C:/Libraries/SFML-2.6.1/include",
+                "-L",
+                "C:/Libraries/SFML-2.6.1/lib",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
